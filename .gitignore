@@ -1,0 +1,34 @@
+# ===== Python =====
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# ===== Conda / venv =====
+.env/
+.venv/
+conda-meta/
+
+# ===== Jupyter =====
+.ipynb_checkpoints/
+
+# ===== Data (절대 Git에 올리지 않음) =====
+data/
+*.csv
+*.npy
+*.npz
+
+# ===== Training outputs =====
+runs/
+checkpoints/
+*.pt
+*.pth
+
+# ===== Logs =====
+*.log
+
+# ===== OS / Editor =====
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
