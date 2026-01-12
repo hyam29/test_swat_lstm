@@ -1,0 +1,25 @@
+experiment:
+  name: lstm_ae_swat
+
+data:
+  window_size: 180
+  stride: 1
+
+model:
+  n_features: null       # 노트북에서 feature 개수로 채울 거라 null
+  hidden_size: 128
+  num_layers: 1
+  dropout: 0.0
+
+train:
+  epochs: 30
+  batch_size: 64
+  lr: 0.001
+  weight_decay: 0.0
+  seed: 42
+  device: auto           # auto / cpu / cuda
+  use_amp: true
+
+logging:
+  runs_dir: runs
+  save_model: true
